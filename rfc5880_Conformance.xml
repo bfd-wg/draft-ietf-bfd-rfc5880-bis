@@ -1,0 +1,72 @@
+<section numbered="true" toc="default">
+   <name>[Organization Name]</name>
+   <dl newline="true" spacing="normal" indent="3">
+      <dt>Organization:</dt>
+        <dd>[Organization Name]</dd>
+      <dt>Implementation Name:</dt>
+        <dd>[Implementation Name]</dd>
+      <dt>Description:</dt>
+        <dd>[Description]</dd>
+      <dt>Maturity:</dt>
+        <dd>[Maturity]</dd>
+      <dt>Coverage:</dt><dd></dd>
+      </dl>
+        <ul bare="false" empty="false" indent="3">
+          <li>Section 6.3: unique discriminator per session - [Implemented/Not Implemented]</li>
+          <li>Section 6.4: Echo Function - [Implemented/Not Implemented]</li>
+          <li>Section 6.5: Poll Sequence - [Implemented/Not Implemented]</li>
+          <li>Section 6.6: Demand Mode - [Implemented/Not Implemented]</li>
+          <li>Section 6.7.2: Simple Password Authentication - [Implemented/Not Implemented]</li>
+          <li>Section 6.7.3: Keyed MD5 and Meticulous Keyed MD5 Authentication - [Implemented/Not Implemented]</li>
+          <li>Section 6.7.4: Keyed SHA1 and Meticulous Keyed SHA1 Authentication - [Implemented/Not Implemented]</li>
+          <li>Section 6.8.1: State Variables (indicate individual conformance)</li>
+          <li>
+            <ul bare="false" empty="false" indent="3">
+              <li>bfd.SessionState - [Implemented/Not Implemented]</li>
+              <li>bfd.RemoteSessionState - [Implemented/Not Implemented]</li>
+              <li>bfd.LocalDiscr - [Implemented/Not Implemented]</li>
+              <li>bfd.RemoteDiscr - [Implemented/Not Implemented]</li>
+              <li>bfd.LocalDiag - [Implemented/Not Implemented]</li>
+              <li>bfd.DesiredMinTxInterval - [Implemented/Not Implemented]</li>
+              <li>bfd.RequiredMinRxInterval - [Implemented/Not Implemented]</li>
+              <li>bfd.RemoteMinRxInterval - [Implemented/Not Implemented]</li>
+              <li>bfd.DemandMode - [Implemented/Not Implemented]</li>
+              <li>bfd.RemoteDemandMode - [Implemented/Not Implemented]</li>
+              <li>bfd.DetectMult - [Implemented/Not Implemented]</li>
+              <li>bfd.AuthType - [Implemented/Not Implemented]</li>
+              <li>bfd.RcvAuthSeq - [Implemented/Not Implemented]</li>
+              <li>bfd.XmitAuthSeq - [Implemented/Not Implemented]</li>
+              <li>bfd.AuthSeqKnown - [Implemented/Not Implemented]</li>
+            </ul></li>
+          <li>Section 6.8.2: Timer Negotiation - [Implemented/Not Implemented]</li>
+          <li>Section 6.8.3: Timer Manipulation - [Implemented/Not Implemented]</li>
+          <li>Section 6.8.4: Detection Time Calculation - [Implemented/Not Implemented]</li>
+          <li>Section 6.8.5: Echo Function Failure Detection - [Implemented/Not Implemented]</li>
+          <li>Section 6.8.6: Reception of BFD Control Packets - [Implemented/Not Implemented]</li>
+          <li>Section 6.8.7: Transmitting of BFD Control Packets - [Implemented/Not Implemented]</li>
+          <li>Section 6.8.8: Reception of BFD Echo Packets - [Implemented/Not Implemented]</li>
+          <li>Section 6.8.9: Transmission of BFD Echo Packets - [Implemented/Not Implemented]</li>
+          <li>Section 6.8.10: Min Rx Interval Change - [Implemented/Not Implemented]</li>
+          <li>Section 6.8.11: Min Tx Interval Change - [Implemented/Not Implemented]</li>
+          <li>Section 6.8.12: Detect Multiplier Change - [Implemented/Not Implemented]</li>
+          <li>Section 6.8.13: Enabling or Disabling The Echo Function - [Implemented/Not Implemented]</li>
+          <li>Section 6.8.14: Enabling or Disabling Demand Mode - [Implemented/Not Implemented]</li>
+          <li>Section 6.8.15: Forwarding Plane Reset - [Implemented/Not Implemented]</li>
+          <li>Section 6.8.16: Administrative Control - [Implemented/Not Implemented]</li>
+          <li>Section 6.8.17: Concatenated Paths - [Implemented/Not Implemented]</li>
+          <li>Section 6.8.18: Session Hold Down - [Implemented/Not Implemented]</li>
+          <li>Section 9: Generalized TTL Security Mechanism - [Implemented/Not Implemented]</li>
+        </ul>
+              <dl newline="true" spacing="normal" indent="3">
+      <dt>Licensing:</dt>
+        <dd>[Licensing]</dd>
+      <dt>Implementation Experience:</dt>
+        <dd>[Implementation Experience]</dd>
+      <dt>Comments:</dt>
+        <dd>[Comments]</dd>
+      <dt>Contact Information:</dt>
+        <dd>[Contact Information]</dd>
+      <dt>Date:</dt>
+        <dd>[Date]</dd>
+   </dl>
+</section>
