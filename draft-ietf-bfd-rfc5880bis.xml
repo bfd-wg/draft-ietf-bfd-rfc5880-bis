@@ -2413,6 +2413,78 @@ DOWN|    | INIT |--------------------->|  UP  |    |INIT, UP
            <dd>[Date]</dd>      
       </dl>
    </section>
+   <section numbered="true" toc="default">
+      <name>HPE</name>
+      <dl newline="true" spacing="normal" indent="3">
+         <dt>Organization:</dt>
+           <dd>HPE</dd>
+         <dt>Implementation Name:</dt>
+           <dd>Junos</dd>
+         <dt>Description:</dt>
+           <dd>Junos OS BFD implementation</dd>
+         <dt>Maturity:</dt>
+           <dd>Mature</dd>
+         <dt>Coverage:</dt><dd></dd>
+         </dl>
+           <ul bare="false" empty="false" indent="3">
+             <li>Section 6.3: unique discriminator per session - Implemented</li>
+             <li>Section 6.4: Echo Function - Implemented</li>
+             <li>Section 6.5: Poll Sequence - Implemented</li>
+             <li>Section 6.6: Demand Mode - Not Implemented</li>
+             <li>Section 6.7.2: Simple Password Authentication - Implemented</li>
+             <li>Section 6.7.3: Keyed MD5 and Meticulous Keyed MD5 Authentication - Implemented</li>
+             <li>Section 6.7.4: Keyed SHA1 and Meticulous Keyed SHA1 Authentication - Implemented</li>
+             <li>Section 6.8.1: State Variables (indicate individual conformance)</li>
+             <li>
+               <ul bare="false" empty="false" indent="3">
+                 <li>bfd.SessionState - Implemented</li>
+                 <li>bfd.RemoteSessionState - Implemented</li>
+                 <li>bfd.LocalDiscr - Implemented</li>
+                 <li>bfd.RemoteDiscr - Implemented</li>
+                 <li>bfd.LocalDiag - Implemented</li>
+                 <li>bfd.DesiredMinTxInterval - Implemented</li>
+                 <li>bfd.RequiredMinRxInterval - Implemented</li>
+                 <li>bfd.RemoteMinRxInterval - Implemented</li>
+                 <li>bfd.DemandMode - Not Implemented</li>
+                 <li>bfd.RemoteDemandMode - Not Implemented</li>
+                 <li>bfd.DetectMult - Implemented</li>
+                 <li>bfd.AuthType - Implemented</li>
+                 <li>bfd.RcvAuthSeq - Implemented</li>
+                 <li>bfd.XmitAuthSeq - Implemented</li>
+                 <li>bfd.AuthSeqKnown - Implemented</li>
+               </ul></li>
+             <li>Section 6.8.2: Timer Negotiation - Implemented</li>
+             <li>Section 6.8.3: Timer Manipulation - Implemented</li>
+             <li>Section 6.8.4: Detection Time Calculation - Implemented</li>
+             <li>Section 6.8.5: Echo Function Failure Detection - Implemented</li>
+             <li>Section 6.8.6: Reception of BFD Control Packets - Implemented</li>
+             <li>Section 6.8.7: Transmitting of BFD Control Packets - Implemented</li>
+             <li>Section 6.8.8: Reception of BFD Echo Packets - Implemented</li>
+             <li>Section 6.8.9: Transmission of BFD Echo Packets - Implemented</li>
+             <li>Section 6.8.10: Min Rx Interval Change - Implemented</li>
+             <li>Section 6.8.11: Min Tx Interval Change - Implemented</li>
+             <li>Section 6.8.12: Detect Multiplier Change - Implemented</li>
+             <li>Section 6.8.13: Enabling or Disabling The Echo Function - Implemented</li>
+             <li>Section 6.8.14: Enabling or Disabling Demand Mode - Implemented</li>
+             <li>Section 6.8.15: Forwarding Plane Reset - Implemented</li>
+             <li>Section 6.8.16: Administrative Control - Implemented</li>
+             <li>Section 6.8.17: Concatenated Paths - Implemented</li>
+             <li>Section 6.8.18: Session Hold Down - Implemented</li>
+             <li>Section 9: Generalized TTL Security Mechanism - Implemented</li>
+           </ul>
+                 <dl newline="true" spacing="normal" indent="3">
+         <dt>Licensing:</dt>
+           <dd>Proprietary</dd>
+         <dt>Implementation Experience:</dt>
+           <dd>N/A</dd>
+         <dt>Comments:</dt>
+           <dd>N/A</dd>
+         <dt>Contact Information:</dt>
+           <dd>Santhi Raju Challapalli, Email: santhi-raju.challapalli@hpe.com</dd>
+         <dt>Date:</dt>
+           <dd>4 August, 2026</dd>
+      </dl>
+   </section>
 </section>
 
 <section numbered="true" toc="default" removeInRFC="true">
