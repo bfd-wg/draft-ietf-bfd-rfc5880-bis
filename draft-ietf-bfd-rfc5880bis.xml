@@ -2414,6 +2414,156 @@ DOWN|    | INIT |--------------------->|  UP  |    |INIT, UP
       </dl>
    </section>
    <section numbered="true" toc="default">
+      <name>Arrcus</name>
+      <dl newline="true" spacing="normal" indent="3">
+         <dt>Organization:</dt>
+           <dd>Arrcus</dd>
+         <dt>Implementation Name:</dt>
+           <dd>ArcOS 8.1.2</dd>
+         <dt>Description:</dt>
+           <dd>ArcOS supports hardware-accelerated BFD with offload to Broadcom XGS and DNX ASICs (IPv4 and IPv6 independently configurable).  Minimum detection intervals in the sub-100ms range are achievable.  BFD sessions are supported for BGP, IS-IS, and OSPF clients, with multiple client protocols able to share a single session between the same address pair.  Micro BFD for LAG (RFC 7130) and multihop BFD (RFC 5883) are also supported.</dd>
+         <dt>Maturity:</dt>
+           <dd>Production</dd>
+         <dt>Coverage:</dt><dd></dd>
+         </dl>
+           <ul bare="false" empty="false" indent="3">
+             <li>Section 6.3: unique discriminator per session - Implemented (local and remote discriminators are allocated per session and exposed in operational state)</li>
+             <li>Section 6.4: Echo Function - Not Implemented</li>
+             <li>Section 6.5: Poll Sequence - Implemented (used internally when BFD session parameters change mid-session; there is no operator-visible Poll Sequence control)</li>
+             <li>Section 6.6: Demand Mode - Not Implemented</li>
+             <li>Section 6.7.2: Simple Password Authentication - Not Implemented</li>
+             <li>Section 6.7.3: Keyed MD5 and Meticulous Keyed MD5 Authentication - Not Implemented</li>
+             <li>Section 6.7.4: Keyed SHA1 and Meticulous Keyed SHA1 Authentication - Not Implemented</li>
+             <li>Section 6.8.1: State Variables (indicate individual conformance)</li>
+             <li>
+               <ul bare="false" empty="false" indent="3">
+                 <li>bfd.SessionState - Implemented</li>
+                 <li>bfd.RemoteSessionState - Implemented</li>
+                 <li>bfd.LocalDiscr - Implemented</li>
+                 <li>bfd.RemoteDiscr - Implemented</li>
+                 <li>bfd.LocalDiag - Unknown (maintained internally but not exposed via CLI)</li>
+                 <li>bfd.DesiredMinTxInterval - Implemented</li>
+                 <li>bfd.RequiredMinRxInterval - Implemented</li>
+                 <li>bfd.RemoteMinRxInterval - Implemented</li>
+                 <li>bfd.DemandMode - Not Implemented</li>
+                 <li>bfd.RemoteDemandMode - Not Implemented</li>
+                 <li>bfd.DetectMult - Implemented</li>
+                 <li>bfd.AuthType - Not Implemented</li>
+                 <li>bfd.RcvAuthSeq - Not Implemented</li>
+                 <li>bfd.XmitAuthSeq - Not Implemented</li>
+                 <li>bfd.AuthSeqKnown - Not Implemented</li>
+               </ul></li>
+             <li>Section 6.8.2: Timer Negotiation - Implemented (advertised TX interval = max(DesiredMinTxInterval, peer's RequiredMinRxInterval))</li>
+             <li>Section 6.8.3: Timer Manipulation - Implemented (timer changes on established sessions are performed in place without session teardown)</li>
+             <li>Section 6.8.4: Detection Time Calculation - Implemented (detection time = negotiated TX interval x DetectMult)</li>
+             <li>Section 6.8.5: Echo Function Failure Detection - Not Implemented</li>
+             <li>Section 6.8.6: Reception of BFD Control Packets - Implemented</li>
+             <li>Section 6.8.7: Transmitting of BFD Control Packets - Implemented (both CPU-path and hardware-offloaded transmission are supported)</li>
+             <li>Section 6.8.8: Reception of BFD Echo Packets - Not Implemented</li>
+             <li>Section 6.8.9: Transmission of BFD Echo Packets - Not Implemented</li>
+             <li>Section 6.8.10: Min Rx Interval Change - Not Reported</li>
+             <li>Section 6.8.11: Min Tx Interval Change - Implemented</li>
+             <li>Section 6.8.12: Detect Multiplier Change - Implemented</li>
+             <li>Section 6.8.13: Enabling or Disabling The Echo Function - Not Implemented</li>
+             <li>Section 6.8.14: Enabling or Disabling Demand Mode - Not Implemented</li>
+             <li>Section 6.8.15: Forwarding Plane Reset - Implemented (BFD sessions recover correctly across process restart and hardware offload resync)</li>
+             <li>Section 6.8.16: Administrative Control - Implemented (per-profile administrative enable/disable, AdminDown state)</li>
+             <li>Section 6.8.17: Concatenated Paths - Unknown (multihop BFD over single and ECMP paths is supported, but the behavior in Section 6.8.17 has not been explicitly verified)</li>
+             <li>Section 6.8.18: Session Hold Down - Partially Implemented (BGP sessions can be held down while BFD is down ("strict" mode), but the full semantics of Section 6.8.18 have not been explicitly verified)</li>
+             <li>Section 9: Generalized TTL Security Mechanism - Unknown (not documented in the current release)</li>
+           </ul>
+      <dl newline="true" spacing="normal" indent="3">
+         <dt>Licensing:</dt>
+           <dd>Not Provided</dd>
+         <dt>Implementation Experience:</dt>
+           <dd>Not Provided</dd>
+         <dt>Comments:</dt>
+           <dd>Authentication is planned for a future release.</dd>
+         <dt>Contact Information:</dt>
+           <dd>Mahesh Jethanandani, Email: mjethanandani@gmail.com</dd>
+         <dt>Date:</dt>
+           <dd>6 July, 2026</dd>
+      </dl>
+   </section>
+   <section numbered="true" toc="default">
+      <name>Cisco Systems, Inc.</name>
+      <dl newline="true" spacing="normal" indent="3">
+         <dt>Organization:</dt>
+           <dd>Cisco Systems, Inc.</dd>
+         <dt>Implementation Name:</dt>
+           <dd>IOS XR Version 4.0, IOS XE Version 12.0(31)S2, IOS NX Version 5.0(2)</dd>
+         <dt>Description:</dt>
+           <dd>Details about Cisco Implementation of RFC 5880.</dd>
+         <dt>Maturity:</dt>
+           <dd>Widely used in general terms.</dd>
+         <dt>Coverage:</dt><dd></dd>
+         </dl>
+           <ul bare="false" empty="false" indent="3">
+             <li>Section 6.3: unique discriminator per session - Implemented</li>
+             <li>Section 6.4: Echo Function - Implemented</li>
+             <li>Section 6.5: Poll Sequence - Implemented</li>
+             <li>Section 6.6: Demand Mode - Implemented</li>
+             <li>Section 6.7.2: Simple Password Authentication - Not Implemented</li>
+             <li>Section 6.7.3: Keyed MD5 and Meticulous Keyed MD5 Authentication - Implemented</li>
+             <li>Section 6.7.4: Keyed SHA1 and Meticulous Keyed SHA1 Authentication - Implemented</li>
+             <li>Section 6.8.1: State Variables (indicate individual conformance)</li>
+             <li>
+               <ul bare="false" empty="false" indent="3">
+                 <li>bfd.SessionState - Implemented</li>
+                 <li>bfd.RemoteSessionState - Implemented</li>
+                 <li>bfd.LocalDiscr - Implemented</li>
+                 <li>bfd.RemoteDiscr - Implemented</li>
+                 <li>bfd.LocalDiag - Implemented</li>
+                 <li>bfd.DesiredMinTxInterval - Implemented</li>
+                 <li>bfd.RequiredMinRxInterval - Implemented</li>
+                 <li>bfd.RemoteMinRxInterval - Implemented</li>
+                 <li>bfd.DemandMode - Implemented</li>
+                 <li>bfd.RemoteDemandMode - Implemented</li>
+                 <li>bfd.DetectMult - Implemented</li>
+                 <li>bfd.AuthType - Implemented</li>
+                 <li>bfd.RcvAuthSeq - Implemented</li>
+                 <li>bfd.XmitAuthSeq - Implemented</li>
+                 <li>bfd.AuthSeqKnown - Implemented</li>
+               </ul></li>
+             <li>Section 6.8.2: Timer Negotiation - Implemented</li>
+             <li>Section 6.8.3: Timer Manipulation - Implemented</li>
+             <li>Section 6.8.4: Detection Time Calculation - Implemented</li>
+             <li>Section 6.8.5: Echo Function Failure Detection - Implemented</li>
+             <li>Section 6.8.6: Reception of BFD Control Packets - Implemented</li>
+             <li>Section 6.8.7: Transmitting of BFD Control Packets - Implemented</li>
+             <li>Section 6.8.8: Reception of BFD Echo Packets - Implemented</li>
+             <li>Section 6.8.9: Transmission of BFD Echo Packets - Implemented</li>
+             <li>Section 6.8.10: Min Rx Interval Change - Implemented</li>
+             <li>Section 6.8.11: Min Tx Interval Change - Implemented</li>
+             <li>Section 6.8.12: Detect Multiplier Change - Implemented</li>
+             <li>Section 6.8.13: Enabling or Disabling The Echo Function - Implemented</li>
+             <li>Section 6.8.14: Enabling or Disabling Demand Mode - Not Implemented</li>
+             <li>Section 6.8.15: Forwarding Plane Reset - Implemented</li>
+             <li>Section 6.8.16: Administrative Control - Implemented</li>
+             <li>Section 6.8.17: Concatenated Paths - Implemented</li>
+             <li>Section 6.8.18: Session Hold Down - Implemented</li>
+             <li>Section 9: Generalized TTL Security Mechanism - Implemented</li>
+           </ul>
+      <dl newline="true" spacing="normal" indent="3">
+         <dt>Licensing:</dt>
+           <dd>Proprietary</dd>
+         <dt>Implementation Experience:</dt>
+           <dd>
+             <ul bare="false" empty="false" indent="3">
+               <li>Section 6.8.18: A BFD session might be put on hold from being established with a peer if the local system is unable to run the session due to resource issues, such as the system being unable to transmit BFD packets at the requested rate.  The session would be kept in the AdminDown state without transmitting packets.</li>
+               <li>Section 6.6: Demand mode in received packets is processed, and transmission is blocked if Demand mode is set.  The device does not set Demand mode in locally transmitted BFD packets.</li>
+               <li>Section 6.8.17: Concatenated paths are supported only for MPLS pseudowires (VCCV endpoint).</li>
+             </ul>
+           </dd>
+         <dt>Comments:</dt>
+           <dd>IOS XR, IOS XE, and IOS NX are independent implementations.</dd>
+         <dt>Contact Information:</dt>
+           <dd>Rajaguru Veluchamy, Email: rvelucha@cisco.com</dd>
+         <dt>Date:</dt>
+           <dd>2 July, 2026</dd>
+      </dl>
+   </section>
+   <section numbered="true" toc="default">
       <name>HPE</name>
       <dl newline="true" spacing="normal" indent="3">
          <dt>Organization:</dt>
