@@ -2497,6 +2497,78 @@ DOWN|    | INIT |--------------------->|  UP  |    |INIT, UP
       </dl>
    </section>
    <section numbered="true" toc="default">
+      <name>FreeRADIUS</name>
+      <dl newline="true" spacing="normal" indent="3">
+         <dt>Organization:</dt>
+           <dd>FreeRADIUS</dd>
+         <dt>Implementation Name:</dt>
+           <dd>FreeRADIUS</dd>
+         <dt>Description:</dt>
+           <dd>A BFD listener that runs over UDP, with one session for each configured peer.</dd>
+         <dt>Maturity:</dt>
+           <dd>Alpha</dd>
+         <dt>Coverage:</dt><dd></dd>
+         </dl>
+           <ul bare="false" empty="false" indent="3">
+             <li>Section 6.3: unique discriminator per session - Partially Implemented (the discriminator is entirely random, and the server does not check that the discriminator is unique)</li>
+             <li>Section 6.4: Echo Function - Not Implemented</li>
+             <li>Section 6.5: Poll Sequence - Implemented</li>
+             <li>Section 6.6: Demand Mode - Implemented</li>
+             <li>Section 6.7.2: Simple Password Authentication - Implemented</li>
+             <li>Section 6.7.3: Keyed MD5 and Meticulous Keyed MD5 Authentication - Implemented</li>
+             <li>Section 6.7.4: Keyed SHA1 and Meticulous Keyed SHA1 Authentication - Implemented</li>
+             <li>Section 6.8.1: State Variables (indicate individual conformance)</li>
+             <li>
+               <ul bare="false" empty="false" indent="3">
+                 <li>bfd.SessionState - Implemented</li>
+                 <li>bfd.RemoteSessionState - Implemented</li>
+                 <li>bfd.LocalDiscr - Implemented</li>
+                 <li>bfd.RemoteDiscr - Implemented</li>
+                 <li>bfd.LocalDiag - Partially Implemented (the server sets only the diagnostic values 1 and 3)</li>
+                 <li>bfd.DesiredMinTxInterval - Implemented</li>
+                 <li>bfd.RequiredMinRxInterval - Implemented</li>
+                 <li>bfd.RemoteMinRxInterval - Implemented</li>
+                 <li>bfd.DemandMode - Implemented</li>
+                 <li>bfd.RemoteDemandMode - Implemented</li>
+                 <li>bfd.DetectMult - Implemented</li>
+                 <li>bfd.AuthType - Implemented</li>
+                 <li>bfd.RcvAuthSeq - Implemented</li>
+                 <li>bfd.XmitAuthSeq - Implemented</li>
+                 <li>bfd.AuthSeqKnown - Implemented</li>
+               </ul></li>
+             <li>Section 6.8.2: Timer Negotiation - Implemented</li>
+             <li>Section 6.8.3: Timer Manipulation - Implemented</li>
+             <li>Section 6.8.4: Detection Time Calculation - Implemented</li>
+             <li>Section 6.8.5: Echo Function Failure Detection - Not Implemented</li>
+             <li>Section 6.8.6: Reception of BFD Control Packets - Partially Implemented (the server does not implement the steps for the Echo Function)</li>
+             <li>Section 6.8.7: Transmitting of BFD Control Packets - Partially Implemented (the server does not implement the Passive role)</li>
+             <li>Section 6.8.8: Reception of BFD Echo Packets - Not Implemented</li>
+             <li>Section 6.8.9: Transmission of BFD Echo Packets - Not Implemented</li>
+             <li>Section 6.8.10: Min Rx Interval Change - Not Implemented</li>
+             <li>Section 6.8.11: Min Tx Interval Change - Partially Implemented (the server changes the interval only to follow the one second rule)</li>
+             <li>Section 6.8.12: Detect Multiplier Change - Not Implemented</li>
+             <li>Section 6.8.13: Enabling or Disabling The Echo Function - Not Implemented</li>
+             <li>Section 6.8.14: Enabling or Disabling Demand Mode - Not Implemented</li>
+             <li>Section 6.8.15: Forwarding Plane Reset - Not Implemented</li>
+             <li>Section 6.8.16: Administrative Control - Not Implemented</li>
+             <li>Section 6.8.17: Concatenated Paths - Not Implemented</li>
+             <li>Section 6.8.18: Session Hold Down - Not Implemented</li>
+             <li>Section 9: Generalized TTL Security Mechanism - Partially Implemented (the server sends packets with a TTL of 255, and does not check the TTL of received packets)</li>
+           </ul>
+      <dl newline="true" spacing="normal" indent="3">
+         <dt>Licensing:</dt>
+           <dd>GPLv2 / LGPLv2</dd>
+         <dt>Implementation Experience:</dt>
+           <dd>Minimal</dd>
+         <dt>Comments:</dt>
+           <dd>N/A</dd>
+         <dt>Contact Information:</dt>
+           <dd>Alan DeKok, Email: aland@freeradius.org</dd>
+         <dt>Date:</dt>
+           <dd>16 November, 2026</dd>
+      </dl>
+   </section>
+   <section numbered="true" toc="default">
       <name>HPE</name>
       <dl newline="true" spacing="normal" indent="3">
          <dt>Organization:</dt>
@@ -2681,7 +2753,7 @@ DOWN|    | INIT |--------------------->|  UP  |    |INIT, UP
       This version includes the following changes from version -01:
       </t>
       <ul>
-      <li>Added implementation reports from Arrcus, cisco, HPE, and ZTE.</li>
+      <li>Added implementation reports from Arrcus, cisco, FreeRADIUS, HPE, and ZTE.</li>
       </ul>
     </section>
 </section>    
