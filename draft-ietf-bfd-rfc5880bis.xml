@@ -440,6 +440,17 @@ An optional Authentication Section MAY be present:
     5 - Meticulous Keyed SHA1   
 6-255 - Reserved for future use
 ]]></artwork>
+          <t>
+          In this context, the term "meticulous" means that the Sequence
+          number is incremented on every new packet which is sent. The
+          term "keyed" means that the packets are authenticated via the
+          use of a secret key or keys which are known to both sender and
+          receiver. The term "meticulous keyed" therefore refers to BFD
+          authentication type where each subsequently transmitted packet
+          has a sequence number one greater than the immediately prior
+          one, and can be authenticated. See <xref target="sect-6.7"/>
+          for more details.
+          </t>
           </dd>
           <dt>Auth Len</dt>
           <dd><br/>
