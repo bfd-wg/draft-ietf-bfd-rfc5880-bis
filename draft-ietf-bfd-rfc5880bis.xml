@@ -2504,7 +2504,7 @@ DOWN|    | INIT |--------------------->|  UP  |    |INIT, UP
          <dt>Implementation Name:</dt>
            <dd>FreeRADIUS</dd>
          <dt>Description:</dt>
-           <dd>A BFD listener that runs over UDP, with one session for each configured peer.</dd>
+           <dd>A BFD implementation that runs over UDP, with one session for each configured peer.</dd>
          <dt>Maturity:</dt>
            <dd>Alpha</dd>
          <dt>Coverage:</dt><dd></dd>
