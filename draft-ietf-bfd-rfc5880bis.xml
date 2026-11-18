@@ -2852,6 +2852,7 @@ DOWN|    | INIT |--------------------->|  UP  |    |INIT, UP
       This version includes the following changes from version -01:
       </t>
       <ul>
+      <li>Added a note about the meaning of "meticulous keyed" in this document.</li>
       <li>Added implementation reports from Arrcus, cisco, FreeRADIUS, HPE, and ZTE.</li>
       <li>Updated the IANA Considerations section to address the IANA early review (IANA #1456059): removed the "Unassigned" entries, added a "New IANA Actions" subsection covering the BFD Parameters registry group, the iana-bfd-types YANG module, and the IANA-BFD-TC-STD-MIB module, and added guidance for the designated experts.</li>
       </ul>
